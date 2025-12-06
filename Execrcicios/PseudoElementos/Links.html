@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkred;
+            font-weight: bold;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+            background-color: rgba(37, 37, 37, 0.356);
+        }
+        a:active{
+            color: yellow;
+        }
+        a::after{
+            content: '';
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https//facebook.com" target="_blank">Repositório GitHub</a></li>
+        <li><a href="www.youtube.com">Canal do Youtube</a></li>
+        <li><a href="Email">Email</a></li>
+    </ul>
+</body>
+</html>

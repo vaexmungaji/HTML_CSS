@@ -1,0 +1,169 @@
+@charset "UTF-8";
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao:    font: normal 400 16px 'Arial,Verdana,Helvetica,sans-serif';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:'idroid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+}
+header{
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to bottom,var(--cor3),var(--cor5));
+    color: white;    
+    z-index: 1000;
+    padding: 11px 11px 5px 11px;
+    min-height: 150px;
+}
+header>h1{
+    text-align: center;
+    font: normal bolder 30px 'Verdana';
+    margin: 9px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.297);
+}
+header>p{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: 300;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+header>nav{
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.295);
+}
+header>nav>a{
+    text-decoration: none;
+    color: white;
+    font: normal bold 20px 'var(--fonte-padrao';
+    padding: 10px;
+        border-radius: 5px;
+}
+header>nav>a:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    transition: all 0.5s ease-in-out;
+}
+main{
+    margin: auto;
+    padding: 20px;                                                                                             
+    background-color: white;
+    font-size: 26px;
+    min-width: 300px;
+    max-width: 1000px;
+}
+main p{
+    font: normal 200 1em 'Arial';
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 2em;
+    padding: 10px;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+.History>h1{
+    font-family: 'idroid','Sans-serif';
+    color: var(--cor5);
+    font-size: 30px;
+    margin: 10px;
+}
+.History>h2{
+    font-family: 'idroid','Sans-serif';
+    font-size: 26px;
+    color: var(--cor4);
+    background-image: linear-gradient(to right,var(--cor1),transparent);
+    margin: 10px;
+}
+.History>p>a{
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: var(--cor1);
+      padding: 2px 6px;
+}
+.History>p>a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+.image{
+    display: block;
+    margin: auto;
+    max-width: 100px;
+    min-width:350px;
+}
+.Aprender{
+    margin: 10px auto 10px auto;
+    width: 95%;
+    padding: 0px;
+    background-color:rgba(40, 145, 40, 0.486) ;
+    border-radius: 15px;
+    box-shadow: 5px 5px 45px 22px rgba(45, 143, 45, 0.26);
+}
+.Aprender>h2{
+    font: normal bold 26px 'Arial';
+    padding: 20px 0px 30px 30px;
+    border-radius: 15px 15px 0px 0px;
+    background-color:rgba(34, 110, 34, 0.829) ;
+    color: white;
+}
+#Versions{
+    padding: 20px;
+    font-size: 20px;
+}
+#Versions>aside{
+    display: inline-block;
+    padding-left: 15px;
+}
+#Versions>aside>ul>li{
+    display: flex;
+    font-size: 22px;
+     text-indent: 10px;
+}
+#Versions>aside>ul>li::before{
+    content: "✔";
+}
+.conteiner{
+    margin-left: 50px;
+}
+footer{
+    background-color:var(--cor5) ; 
+    text-align: center;
+    color: white;   
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer>.copyright::before{
+    content: " ©";
+}
+footer>h3{
+     font-size: 26px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
