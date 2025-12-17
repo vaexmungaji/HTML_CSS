@@ -112,10 +112,10 @@ main strong{
     max-width: 100px;
     min-width:350px;
 }
-aside.aprender{
+.aprender{
     margin: 10px auto 10px auto;
-    width: 95%;
-    padding: 0px 15px 5px 15px;
+    width: 100%;
+    padding: 0px;
     border-radius: 15px;
     box-shadow: 5px 5px 45px 22px rgba(45, 143, 45, 0.26);
 }
