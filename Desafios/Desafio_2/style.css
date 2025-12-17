@@ -112,40 +112,35 @@ main strong{
     max-width: 100px;
     min-width:350px;
 }
-.Aprender{
+aside.aprender{
     margin: 10px auto 10px auto;
     width: 95%;
-    padding: 0px;
-    background-color:rgba(40, 145, 40, 0.486) ;
+    padding: 0px 15px 5px 15px;
     border-radius: 15px;
     box-shadow: 5px 5px 45px 22px rgba(45, 143, 45, 0.26);
 }
-.Aprender>h2{
-    font: normal bold 26px 'Arial';
+.aprender>h3{
+    font: normal bold 28px 'Arial';
     padding: 20px 0px 30px 30px;
     border-radius: 15px 15px 0px 0px;
     background-color:rgba(34, 110, 34, 0.829) ;
     color: white;
 }
-#Versions{
-    padding: 20px;
-    font-size: 20px;
-}
-#Versions>aside{
+.aprender>ul{
     display: inline-block;
-    padding-left: 15px;
+
 }
-#Versions>aside>ul>li{
+.aprender>ul>li{
     display: flex;
     font-size: 22px;
-     text-indent: 10px;
+    text-indent: 10px;
+    margin-left: 140px;
+
 }
-#Versions>aside>ul>li::before{
+.aprender>ul>li::before{
     content: "✔";
 }
-.conteiner{
-    margin-left: 50px;
-}
+
 footer{
     background-color:var(--cor5) ; 
     text-align: center;
