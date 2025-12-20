@@ -56,7 +56,7 @@ header>nav>a{
     color: white;
     font: normal bold 20px 'var(--fonte-padrao';
     padding: 10px;
-        border-radius: 5px;
+     border-radius: 5px;
 }
 header>nav>a:hover{
     background-color: var(--cor2);
