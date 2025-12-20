@@ -1,0 +1,99 @@
+@charset "UTF-8";
+*{
+    font:200 normal 20px "Corrier New,Sans-serif";
+}
+body{
+    min-width: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.39);
+}
+header>h1{
+    font:normal bold 30px "Arial,Sans-serif" ;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 5vw;
+    margin: 10px;
+}
+p>a{
+    color: rgba(255, 255, 255, 0.692);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    margin: 50px 0px;
+}
+header>p>a::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+header>p>a:hover::after{
+        width: 100%;
+}
+main{
+    margin: 15px;
+    padding: 15px;
+}
+#p1{
+    background-color: rgb(49, 49, 49);
+    background: url(imagens/background001.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#p2{
+    background-color: rgb(49, 49, 49);
+    background: url(imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+aside{
+    background-color: transparent;
+    margin: 20px 20px;
+}
+aside>p{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 4vw;
+    display: inline-block;
+    padding: 10px;
+    font-size: 2vw;
+        font-size: 2.5vw;
+}
+.paralax>aside>p{
+    display: inline-block;
+    color: white;
+    background-color:rgba(65, 59, 59, 0.712);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 2vw;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+footer>p{
+    margin-top: 20px;
+    padding: 20px 0px 0px 0px;
+}
