@@ -1,0 +1,303 @@
+@charset "UTF-8";
+:root{
+    --cor0:rgb(105, 105, 230);
+    --cor1: #2727aa;
+    --cor2: #1a1a4d;
+    --co3:rgb(29, 29, 71);
+     --co4:rgb(22, 22, 56);
+
+    --fonte1:'Roboto';
+      --fonte2:'Montserrat';
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte1), sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to bottom,rgb(27, 27, 75),rgb(9, 9, 65));
+    box-shadow: 0px 3px 30px 25px rgba(0, 0, 0, 0.39);
+    color: white;
+    font-family: var(--fonte1);
+     margin-bottom: 10px;
+    padding: 20px 20px 0 20px;
+}
+header>div{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    height: 50px;
+
+}
+header>div>img{
+    align-self: flex-start;
+    width: auto;
+    height: 100%;
+    margin-right: 5px;
+}
+nav{
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 1px 3px 30px rgba(27, 38, 92, 0.17);
+}
+nav>a{
+    text-decoration: none;
+    color: rgb(228, 219, 219);
+    font-size: 1.2rem;
+    margin: 0px 20px;
+    position: relative;
+}
+nav>a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: white;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+nav>a:hover::after{
+    width: 100%;
+}
+.menu{
+    width: auto;
+    height: 40px;
+    align-self: flex-end;
+    display: none;
+}
+#btnSigin{
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(228, 219, 219);
+    background-color: rgba(54, 54, 238, 0.767);
+    border-radius: 15px;
+    cursor: pointer;
+    animation: sigin 1.5s infinite alternate;
+    padding: 10px;
+}
+#btnSigin:hover{
+        font-size: 1.3rem;
+}
+@keyframes sigin {
+    0%{
+        box-shadow: 1px 1px 1px 1px rgba(37, 37, 247, 0.568);
+    }
+      100%{
+        box-shadow: 1px 1px 50px 1px rgba(37, 37, 247, 0.568);
+    }
+}
+.conteiner{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1rem;
+    padding: 50px;
+    margin: 20px 50px 0px 50px;
+}
+.conteiner p{
+    flex-grow: 2;
+    flex: 1 1 300px;
+    text-indent: 50px;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+.conteiner h1{
+    flex-grow: 5;
+    flex-shrink: 5;
+    color: var(--cor0);
+    font: normal 500 2.5rem var(--fonte1);
+    margin: 15px 0 0 0;
+}
+.conteiner h2{
+    flex-shrink: 10;
+    color: var(--cor1);
+    font: normal 500 1.7rem var(--fonte1);
+    margin: 12px 0 0 0;
+}
+.destaque ol{
+    margin: 5px 0 0 20px;
+}
+.destaque ol li {
+    margin: 8px 0;
+    color: var(--cor2);
+}
+.destaque ol li a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+.conteinerpic{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1em;
+    padding: 1px;
+    margin: 1px;
+}
+.conteinerpic div{
+    flex: 0.1 5 260px;
+    height: 450px;
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 0px 0px 38px 1px rgba(32, 31, 31, 0.212);
+    border-radius: 17px 7px 0px 0px;
+}
+.conteinerpic>div>img{
+    border-radius: 17px 7px 0px 0px;
+    width: 100%;
+    height: 300px;
+}
+.conteinerpic div h3{
+    color: var(--cor1);
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+.conteinerpic div h4{
+    color: var(--cor0);
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+.conteinerpic div h3::after{
+    content: "";
+    background-image: url("Images/link.svg");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.conteinerpic div span{
+    color: var(--cor1);
+    font-weight: bolder;
+}
+
+.church a{
+    text-decoration: none;
+}
+.church img,.desporto img{
+    display: block;
+    margin: auto;
+     width: 50%;
+    height: 40%;
+}
+.urbanistic-img{
+    display: flex;
+    flex: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+.urbanistic-img img{
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+}
+footer{
+     display: flex;
+     flex-direction: column;
+     margin: 0px;
+     padding: 30px;
+     font-weight: 200;
+     font-family: var(--fonte1);
+    color: white;
+    background-color: rgb(29, 29, 71);
+}
+#contactos>div>h2{
+    padding: 5px;
+    margin: 5px 0px 5px 15px;
+}
+.facebook::before{
+    content:"";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("Images/facebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.insta::before{
+    content:"";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("Images/instagram.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.whatssap::before{
+    content:"";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("Images/social.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.email::before{
+    content:"";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("Images/gmail.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.tel::before{
+    content:"";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("Images/vibration.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+@media screen and (max-width:560px){
+    nav a{
+        display: none;
+    }
+    .menu{
+        display: inline-block;
+    }
+    footer{
+        font-size: 0.6rem;
+    }
+
+}
