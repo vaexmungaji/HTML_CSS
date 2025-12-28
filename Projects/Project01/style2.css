@@ -111,29 +111,30 @@ nav>a:hover::after{
     flex-flow: row wrap;
     align-items: center;
     align-content: space-evenly;
-    font-size: 1rem;
+
     padding: 50px;
     margin: 20px 50px 0px 50px;
 }
 .conteiner p{
-    flex-grow: 2;
-    flex: 1 1 300px;
+    font-size: clamp(0.9rem,1vw,0.8rem);
     text-indent: 50px;
     padding: 10px;
     margin: 10px;
     text-align: justify;
 }
-.conteiner h1{
-    flex-grow: 5;
-    flex-shrink: 5;
+.titulo{
     color: var(--cor0);
-    font: normal 500 2.5rem var(--fonte1);
-    margin: 15px 0 0 0;
+    font-weight: 500;
+    font-family: var(--fonte1);
+    font-size: clamp(1.7rem,3vw,2.7rem);
+    margin: 25px 2px 0px 2px;
+
 }
-.conteiner h2{
-    flex-shrink: 10;
+.subtitulo{
+    font-size: clamp(1.rem,1vw,1.2rem);
     color: var(--cor1);
-    font: normal 500 1.7rem var(--fonte1);
+    font-weight: 500;
+    font-family: var(--fonte1);
     margin: 12px 0 0 0;
 }
 .destaque ol{
@@ -150,35 +151,37 @@ nav>a:hover::after{
 .conteinerpic{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    font-size: 1em;
-    padding: 1px;
-    margin: 1px;
+    margin: 0px;
 }
 .conteinerpic div{
-    flex: 0.1 5 260px;
-    height: 450px;
-    margin: 10px;
+    flex: 0 20 170px;
+    display: flex;
+    font-size: 0.9rem;
+    flex-direction: column;
+    height: 50vh;
+    margin: 5px;
     padding: 0px;
     box-shadow: 0px 0px 38px 1px rgba(32, 31, 31, 0.212);
     border-radius: 17px 7px 0px 0px;
 }
 .conteinerpic>div>img{
+    flex: 0 10 200px;
     border-radius: 17px 7px 0px 0px;
-    width: 100%;
-    height: 300px;
+    height: 5rem;
 }
 .conteinerpic div h3{
+    flex: 0 10 1px;
     color: var(--cor1);
-    padding: 5px;
     margin-bottom: 5px;
+    padding: 0px 10px;
     text-align: center;
     font-weight: 600;
 }
 .conteinerpic div h4{
+    flex: 0.1 10 1px;
     color: var(--cor0);
-    padding: 5px;
     margin-bottom: 5px;
     text-align: center;
     font-weight: 600;
@@ -205,8 +208,9 @@ nav>a:hover::after{
 .church img,.desporto img{
     display: block;
     margin: auto;
-     width: 50%;
-    height: 40%;
+     width: 100%;
+     max-width: 250px;
+    height: 250px;
 }
 .urbanistic-img{
     display: flex;
@@ -216,8 +220,10 @@ nav>a:hover::after{
     margin: 10px;
 }
 .urbanistic-img img{
-    width: 50%;
-    height: 100%;
+    max-width: 50%;
+    width: 300px;
+    height: auto;
+    display: block;
     margin: 10px;
 }
 footer{
@@ -231,6 +237,7 @@ footer{
     background-color: rgb(29, 29, 71);
 }
 #contactos>div>h2{
+    font: clamp(0.3rem,0.1vw,0.3rem);
     padding: 5px;
     margin: 5px 0px 5px 15px;
 }
@@ -290,6 +297,9 @@ footer{
     vertical-align: middle;
 }
 @media screen and (max-width:560px){
+    .conteiner{
+    margin: 20px 1px 0px 1px;
+}
     nav a{
         display: none;
     }
@@ -300,4 +310,9 @@ footer{
         font-size: 0.6rem;
     }
 
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
