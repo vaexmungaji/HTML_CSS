@@ -56,6 +56,7 @@ nav{
     margin-top: 10px;
     width: 100%;
     box-shadow: 1px 3px 30px rgba(27, 38, 92, 0.17);
+    z-index: 2;
 }
 nav>a{
     text-decoration: none;
@@ -82,6 +83,7 @@ nav>a:hover::after{
     height: 40px;
     align-self: flex-end;
     display: none;
+    z-index: 1;
 }
 #btnSigin{
     position: absolute;
@@ -106,14 +108,39 @@ nav>a:hover::after{
         box-shadow: 1px 1px 50px 1px rgba(37, 37, 247, 0.568);
     }
 }
-.conteiner{
+.sMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor2);
+    height: 100vh;
+    width: 150px;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    opacity: 0;
+
+}
+.sMenu a{
+    color: rgb(231, 223, 223);
+    text-decoration: none;
+    margin: 10px;
+    padding: 1px;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+
+}
+.sMenu a:hover{
+        background-color: rgb(6, 6, 119);
+}
+.conteiner{ 
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     align-content: space-evenly;
-
     padding: 50px;
-    margin: 20px 50px 0px 50px;
+    margin: 20px 20px 0px 20px;
 }
 .conteiner p{
     font-size: clamp(0.9rem,1vw,0.8rem);
@@ -208,23 +235,28 @@ nav>a:hover::after{
 .church img,.desporto img{
     display: block;
     margin: auto;
-     width: 100%;
-     max-width: 250px;
+     width: auto;
     height: 250px;
 }
+.urbanistic{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+}
 .urbanistic-img{
+    align-self: center;
     display: flex;
     flex: row wrap;
-    justify-content: space-evenly;
+    width: 50%;
+    justify-content: center;
     align-items: center;
     margin: 10px;
 }
 .urbanistic-img img{
-    max-width: 50%;
-    width: 300px;
-    height: auto;
-    display: block;
-    margin: 10px;
+    padding: 10px;
+    width: auto;
+
 }
 footer{
      display: flex;
